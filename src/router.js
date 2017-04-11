@@ -4,6 +4,9 @@ import StoriesView from './views/StoriesView.vue'
 import ArticleView from './views/ArticleView.vue'
 import CommentView from './views/CommentView.vue'
 import UserView from './views/UserView.vue'
+import LoginView from './views/login.vue'
+import MainView from './views/Main.vue'
+import SliderView from './views/demo/slider_demo.vue'
 
 Vue.use(Router)
 
@@ -28,6 +31,9 @@ export default new Router({
     { path: '/article/:url(.*)?', component: ArticleView },
     { path: '/item/:id(\\d+)', component: CommentView },
     { path: '/user/:id', component: UserView },
+    { path: '/login', component: LoginView },
+    { path: '/main', component: MainView },
+    { path: '/slider', component: SliderView },
     { path: '/', redirect: '/top' }
   ]
 })

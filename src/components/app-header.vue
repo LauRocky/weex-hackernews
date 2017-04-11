@@ -19,6 +19,12 @@
       <div class="link" @click="jump('/job')">
         <text class="title">Job</text>
       </div>
+      <div class="link" @click="jump('/login')">
+        <text class="title">weex</text>
+      </div>
+      <div class="link" @click="jump('/main')">
+        <text class="title">Main</text>
+      </div>
     </div>
   </div>
 </template>
